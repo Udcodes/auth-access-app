@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Signin from './components/Signin';
-import reportWebVitals from './reportWebVitals';
+import App from './App';
+import AuthProvider from './contexts/AuthContext';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Signin />
-  </React.StrictMode>,
+  <AuthProvider>
+    <App />
+  </AuthProvider>,
   document.getElementById('root')
 );
-
-reportWebVitals();
